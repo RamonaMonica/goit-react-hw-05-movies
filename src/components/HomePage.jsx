@@ -25,7 +25,9 @@ const HomePage = () => {
   return (
     <main>
       <h1>Trending today</h1>
-      {films && <EditorList films={films} />}
+      <div style={{ color: 'pink' }}>
+        {films && <EditorList films={films} />}
+      </div>
       {loading && <Loader />}
     </main>
   );
